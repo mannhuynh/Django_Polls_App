@@ -1,0 +1,17 @@
+
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Polls Admin</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+
+<!-- Changing Admin Header -->
+
+<!-- Code below should change in the base_site.html in ffolder:
+    >>>D:\Documents\CODE\Python-Environment\env\Lib\site-packages\django\contrib\admin\templates\admin
+-->
